@@ -308,3 +308,33 @@
       width: 100%;
     }
   }
+
+.project-card {
+  position: relative;
+  overflow: hidden;
+  background: #050505;
+}
+
+.project-card::before {
+  content: "";
+  display: block;
+  width: calc(100% + 2rem);
+  height: 180px;
+  margin: -1rem -1rem 1.5rem;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.9;
+}
+
+.project-card:nth-child(1)::before {
+  background-image: url("MLscramjet.png");
+}
+
+.project-card:nth-child(2)::before {
+  background-image: url("Band.jpg");
+}
+
+.project-card:nth-child(3)::before {
+  background-image: url("4nswerme.png");
+}
