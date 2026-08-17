@@ -338,3 +338,152 @@
 .project-card:nth-child(3)::before {
   background-image: url("4nswerme.png");
 }
+
+.project-detail {
+  max-width: 1200px;
+}
+
+.project-detail .section-heading {
+  max-width: 900px;
+}
+
+.project-detail .section-heading h1 {
+  max-width: 950px;
+}
+
+.project-hero-image {
+  width: 100%;
+  margin: 2rem 0 3rem;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 24px;
+  background: #050505;
+}
+
+.project-hero-image img {
+  display: block;
+  width: 100%;
+  max-height: 520px;
+  object-fit: cover;
+}
+
+.project-detail-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 320px;
+  gap: 2rem;
+  align-items: start;
+}
+
+.project-detail-main {
+  padding: 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 24px;
+  background: rgba(255, 255, 255, 0.035);
+}
+
+.project-detail-main h2 {
+  margin: 0 0 1rem;
+  color: #ffffff;
+  font-size: clamp(1.5rem, 3vw, 2rem);
+}
+
+.project-detail-main h2:not(:first-child) {
+  margin-top: 2.5rem;
+}
+
+.project-detail-main p {
+  margin: 0 0 1.25rem;
+  color: rgba(255, 255, 255, 0.74);
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
+.project-detail-sidebar {
+  position: sticky;
+  top: 6rem;
+  padding: 1.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 24px;
+  background: #050505;
+}
+
+.project-detail-sidebar h3 {
+  margin: 0 0 1.5rem;
+  color: #ffffff;
+  font-size: 1.25rem;
+}
+
+.detail-item {
+  padding: 1rem 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.detail-item span {
+  display: block;
+  margin-bottom: 0.35rem;
+  color: rgba(255, 255, 255, 0.45);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.detail-item p {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.78);
+  line-height: 1.6;
+}
+
+.detail-tags {
+  margin-top: 1.5rem;
+}
+
+.image-row {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  margin: 2rem 0;
+}
+
+.image-placeholder {
+  display: grid;
+  min-height: 220px;
+  place-items: center;
+  padding: 1.5rem;
+  border: 1px dashed rgba(255, 255, 255, 0.18);
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.04);
+  text-align: center;
+}
+
+.image-placeholder p {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.45);
+  font-size: 0.95rem;
+}
+
+.back-link {
+  display: inline-flex;
+  margin-top: 2.5rem;
+  color: #ffffff;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.back-link:hover {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+@media (max-width: 900px) {
+  .project-detail-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .project-detail-sidebar {
+    position: static;
+  }
+
+  .image-row {
+    grid-template-columns: 1fr;
+  }
+}
