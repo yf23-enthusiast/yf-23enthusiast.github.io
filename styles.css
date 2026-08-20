@@ -439,10 +439,23 @@
 }
 
 .image-row {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
   margin: 2rem 0;
+  flex-wrap: wrap;
+}
+
+.project-inline-image {
+  width: 100%;
+  max-width: 650px;
+  max-height: 420px;
+  object-fit: contain;
+  border-radius: 12px;
+}
+
+.image-row.two-images .project-inline-image {
+  max-width: 420px;
 }
 
 .image-placeholder {
